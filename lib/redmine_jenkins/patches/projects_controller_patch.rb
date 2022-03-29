@@ -12,7 +12,8 @@ module RedmineJenkins
           helper :jenkins
           helper :redmine_bootstrap_kit
 
-          alias_method_chain :settings, :redmine_jenkins
+          alias_method :settings_without_redmine_jenkins, :settings
+          alias_method :settings, :settings_with_redmine_jenkins
         end
       end
 
