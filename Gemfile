@@ -6,7 +6,7 @@ gem 'jenkins_api_client', '~> 1.5.3'
 gem 'haml-rails'
 
 gem 'coderay', '1.1.3'
-gem 'nokogiri', '1.3.3'
+gem 'nokogiri', '1.11.7'
 
 group :development, :test do
   gem 'rspec', '~> 3.0.0'
