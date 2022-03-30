@@ -2,10 +2,10 @@ class JenkinsJobsController < ApplicationController
   unloadable
 
   # Redmine ApplicationController method
-  before_filter :find_project_by_project_id
+  before_action :find_project_by_project_id
 
-  before_filter :can_build_jenkins_jobs, only:   [:build]
-  before_filter :find_job,               except: [:index, :new, :create]
+  before_action :can_build_jenkins_jobs, only:   [:build]
+  before_action :find_job,               except: [:index, :new, :create]
 
   layout Proc.new { |controller| controller.request.xhr? ? false : 'base' }
 
