@@ -7,6 +7,7 @@ gem 'haml-rails'
 
 gem 'coderay', '1.1.3'
 # gem 'nokogiri', '1.13.3'
+gem 'protected_attributes_continued', '~> 1.8', '>= 1.8.2'
 
 group :development, :test do
   gem 'rspec', '~> 3.0.0'
