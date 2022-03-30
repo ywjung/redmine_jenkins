@@ -2,8 +2,8 @@ class JenkinsSettingsController < ApplicationController
   unloadable
 
   # Redmine ApplicationController method
-  before_filter :find_project_by_project_id
-  before_filter :load_jenkins_settings
+  before_action :find_project_by_project_id
+  before_action :load_jenkins_settings
 
 
   def save
