@@ -6,7 +6,7 @@ class JenkinsJob < ActiveRecord::Base
   belongs_to :repository
   has_many   :builds, class_name: 'JenkinsBuild', dependent: :destroy
 
-  attr_accessible :name, :repository_id, :builds_to_keep
+  attr_accessor :name, :repository_id, :builds_to_keep
 
   ## Validations
   validates :project_id,     presence: true
