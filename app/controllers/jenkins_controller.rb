@@ -2,9 +2,9 @@ class JenkinsController < ApplicationController
   unloadable
 
   # Redmine ApplicationController method
-  before_filter :find_project_by_project_id
-  before_filter :can_view_jenkins_jobs
-  before_filter :find_jenkins_settings
+  before_action :find_project_by_project_id
+  before_action :can_view_jenkins_jobs
+  before_action :find_jenkins_settings
 
   require 'will_paginate/array'
 
