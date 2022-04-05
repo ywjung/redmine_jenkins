@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+# source 'https://rubygems.org'
 
 gem 'jenkins_api_client', '~> 1.5.3'
 
@@ -10,8 +10,8 @@ gem 'coderay', '1.1.3'
 gem 'protected_attributes_continued', '~> 1.8', '>= 1.8.2'
 
 group :development, :test do
-  gem 'rspec', '~> 3.0.0'
-  gem 'rspec-rails', '~> 3.0.1'
+#  gem 'rspec', '~> 3.0.0'
+#  gem 'rspec-rails', '~> 3.0.1'
 
   gem 'shoulda', '~> 3.5.0'
   gem 'shoulda-matchers', '~> 2.7.0'
@@ -23,8 +23,8 @@ group :development, :test do
   gem 'database_cleaner'
 
   # Code coverage
-  gem 'simplecov', '~> 0.21.2'
-  gem 'simplecov-rcov'
+#  gem 'simplecov', '~> 0.21.2'
+#  gem 'simplecov-rcov'
 
   # Junit results
   gem 'ci_reporter_rspec', '~> 1.0.0'
