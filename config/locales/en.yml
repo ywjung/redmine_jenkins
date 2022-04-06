@@ -50,6 +50,7 @@ en:
   notice_job_added: Job added
   notice_job_add_failed: Adding job failed
   notice_job_deleted: Job deleted
+  notice_job_updated: Job updated
 
   field_repository: Repository
   field_job_name: Job name
