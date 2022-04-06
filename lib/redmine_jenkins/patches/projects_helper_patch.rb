@@ -21,3 +21,4 @@ module RedmineJenkins
 
   end
 end
+ 
