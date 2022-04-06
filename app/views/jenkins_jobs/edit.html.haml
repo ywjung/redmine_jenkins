@@ -7,3 +7,4 @@
   %p= f.select :name, options_for_select(@jobs.collect {|job| [job, job]}, [@job.name, @job.name]), {}, { disabled: true }
   %p= f.select :repository_id, options_for_select(@project.repositories.collect {|r| [ r.identifier.blank? ? 'default' : r.identifier, r.id ]}, render_selected_repo(@job))
   %p= f.text_field :builds_to_keep
+  %p= submit_tag l(:button_save)
