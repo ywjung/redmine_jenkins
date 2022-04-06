@@ -102,7 +102,7 @@ module JenkinsJobs
         build.save!
 
         ## Update changesets
-        create_changeset(build, build_details['changeSet']['items'])
+        # create_changeset(build, build_details['changeSet']['items'])
       end
 
 
@@ -118,7 +118,7 @@ module JenkinsJobs
         build.save!
 
         ## Update changesets
-        create_changeset(build, build_details['changeSet']['items'])
+        # create_changeset(build, build_details['changeSet']['items'])
       end
 
 
