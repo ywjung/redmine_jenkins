@@ -26,3 +26,7 @@ Redmine::Plugin.register :redmine_jenkins do
   activity_provider :build_activity, default: true, class_name: ['JenkinsBuild']
 
 end
+
+Rails.configuration.to_prepare do
+  RedmineJenkins::ProjectSettingsTabs.apply
+end
